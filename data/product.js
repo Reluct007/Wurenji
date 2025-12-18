@@ -2,7 +2,7 @@ export const product = [
 	{
 		title: "Mark 7'' FPV Racing Drone",
 		focus: "Mark 7''",
-		slug: "/mark-7-fpv-drone",
+		slug: "mark-7-fpv-drone",
 		collection: "FPV Racing Drones",
 		description: "High-speed FPV racing drone with max speed of 150 km/h, ideal for professional racing and aerial photography missions.",
 		main_image: "/images/pd1.png",
@@ -36,7 +36,7 @@ export const product = [
 	{
 		title: "Mark 10'' FPV Racing Drone",
 		focus: "Mark 10''",
-		slug: "/mark-10-fpv-drone",
+		slug: "mark-10-fpv-drone",
 		collection: "FPV Racing Drones",
 		description: "Mid-size FPV drone with strong payload capacity, max speed 160 km/h, and 15km video transmission range.",
 		main_image: "/images/pd2.png",
@@ -69,7 +69,7 @@ export const product = [
 	{
 		title: "FPV 13'' Heavy-Lift Drone",
 		focus: "FPV 13''",
-		slug: "/fpv-13-heavy-lift",
+		slug: "fpv-13-heavy-lift",
 		collection: "Heavy-Lift Drones",
 		description: "Professional heavy-lift drone with 6kg rated payload, 38-minute empty endurance, ideal for industrial inspection and logistics.",
 		main_image: "/images/sc2.png",
@@ -103,7 +103,7 @@ export const product = [
 	{
 		title: "FPV 15'' Heavy-Lift Drone",
 		focus: "FPV 15''",
-		slug: "/fpv-15-heavy-lift",
+		slug: "fpv-15-heavy-lift",
 		collection: "Heavy-Lift Drones",
 		description: "Large heavy-lift drone with 7kg rated payload, 42-minute empty endurance, for professional industrial applications.",
 		main_image: "/images/sc3.png",
@@ -137,7 +137,7 @@ export const product = [
 	{
 		title: "FPV 15'' X6 Heavy-Lift Hexacopter",
 		focus: "FPV 15'' X6",
-		slug: "/fpv-15-x6-hexacopter",
+		slug: "fpv-15-x6-hexacopter",
 		collection: "Heavy-Lift Drones",
 		description: "Hexacopter ultra-heavy-lift drone with 15kg rated payload, 50-minute empty endurance, industrial flagship product.",
 		main_image: "/images/about.png",
