@@ -1,93 +1,93 @@
 export const navbar = {
 	brand: {
-		name: "Wurenji UAV | 无人机",
+		name: "Wurenji UAV",
 		logo: "/images/product_2025_p1_0.png"
 	},
 	menu: [
-		{ label: "首页 Home", href: "/" },
-		{ label: "产品分类 Categories", href: "/collection" },
-		{ label: "所有产品 Products", href: "/product" },
-		{ label: "关于我们 About Us", href: "/about" },
-		{ label: "联系我们 Contact Us", href: "/contact" }
+		{ label: "Home", href: "/" },
+		{ label: "Categories", href: "/collection" },
+		{ label: "Products", href: "/product" },
+		{ label: "About Us", href: "/about" },
+		{ label: "Contact Us", href: "/contact" }
 	],
 	button: {
-		text: "获取报价 Get Quote",
-		title: "Request a Quote | 获取报价",
-		description: "告诉我们您的项目需求，我们将为您提供定制化解决方案 / Tell us about your project requirements and we'll get back to you with a customized solution."
+		text: "Get Quote",
+		title: "Request a Quote",
+		description: "Tell us about your project requirements and we'll get back to you with a customized solution."
 	}
 };
 
 export const hero = {
-	title: "专业无人机制造商 Professional UAV Manufacturer",
-	focus: "无人机 UAV",
+	title: "Professional UAV Manufacturer",
+	focus: "UAV",
 	bg_image: "/images/uav_intro_p1_0.jpg",
-	description: "专注于FPV竞速无人机和重载工业无人机的研发制造，提供从7英寸到15英寸六轴的全系列产品，支持OEM定制和全球发货 / Specialized in FPV racing and heavy-lift industrial drones, offering complete product lines from 7-inch to 15-inch hexacopter, with OEM customization and global shipping.",
+	description: "Specialized in FPV racing and heavy-lift industrial drones, offering complete product lines from 7-inch to 15-inch hexacopter, with OEM customization and global shipping.",
 	button: [
 		{
-			title: "查看产品 View Products",
+			title: "View Products",
 			variant: "default",
 			href: "/product"
 		},
 		{
-			title: "联系我们 Contact Us",
+			title: "Contact Us",
 			variant: "outline",
 			href: "/contact"
 		}
 	],
 	feature: [
 		{
-			title: "高速飞行 High Speed",
-			description: "最高时速160km/h / Max 160km/h"
+			title: "High Speed",
+			description: "Max 160km/h"
 		},
 		{
-			title: "超长续航 Long Endurance",
-			description: "最长50分钟续航 / Up to 50min"
+			title: "Long Endurance",
+			description: "Up to 50min"
 		},
 		{
-			title: "重载能力 Heavy Payload",
-			description: "最大载重18公斤 / Max 18kg"
+			title: "Heavy Payload",
+			description: "Max 18kg"
 		},
 		{
-			title: "OEM定制 Customizable",
-			description: "支持批量定制 / Bulk customization"
+			title: "Customizable",
+			description: "Bulk customization"
 		}
 	]
 };
 
 export const featuredCategories = {
-	title: "核心产品系列 Our Core Product Lines",
-	focus: "核心产品 Core Products",
-	cta_text: "查看所有产品 View All Products",
+	title: "Our Core Product Lines",
+	focus: "Core Products",
+	cta_text: "View All Products",
 	cta_link: "/product",
-	description: "从高速FPV竞速机到重载工业无人机，我们提供全系列专业无人机解决方案 / From high-speed FPV racing drones to heavy-lift industrial UAVs, we offer complete professional drone solutions.",
+	description: "From high-speed FPV racing drones to heavy-lift industrial UAVs, we offer complete professional drone solutions.",
 	items: [
 		{
-			title: "FPV竞速无人机 / FPV Racing Drones",
+			title: "FPV Racing Drones",
 			focus: "FPV Racing",
 			slug: "/fpv-racing-drones",
 			image: "/images/pd1.png",
-			description: "7-10英寸高速FPV无人机，最高时速160km/h，图传距离15公里 / 7-10 inch high-speed FPV drones, max speed 160km/h, 15km video transmission."
+			description: "7-10 inch high-speed FPV drones, max speed 160km/h, 15km video transmission range."
 		},
 		{
-			title: "重载无人机 / Heavy-Lift Drones",
+			title: "Heavy-Lift Drones",
 			focus: "Heavy-Lift",
 			slug: "/heavy-lift-drones",
 			image: "/images/sc2.png",
-			description: "13-15英寸专业重载机，载重6-18公斤，适合工业应用 / 13-15 inch professional heavy-lift drones, 6-18kg payload, for industrial applications."
+			description: "13-15 inch professional heavy-lift drones, 6-18kg payload capacity, for industrial applications."
 		},
 		{
-			title: "长航时巡飞 / Long-Endurance UAVs",
+			title: "Long-Endurance UAVs",
 			focus: "Long-Endurance",
 			slug: "/long-endurance-uavs",
 			image: "/images/uav_intro_p1_0.jpg",
-			description: "超长续航巡飞无人机，最长50分钟飞行时间 / Ultra-long endurance patrol UAVs, up to 50 minutes flight time."
+			description: "Ultra-long endurance patrol UAVs with up to 50 minutes flight time."
 		},
 		{
-			title: "定制方案 / Custom Solutions",
+			title: "Custom Solutions",
 			focus: "Custom",
 			slug: "/custom-solutions",
 			image: "/images/product_2025_p13_37.png",
-			description: "支持OEM定制和批量订购，提供全球代发货服务 / OEM customization and bulk orders available, global dropshipping service."
+			description: "OEM customization and bulk orders available with global dropshipping service."
 		}
 	]
 };

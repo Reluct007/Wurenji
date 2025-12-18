@@ -10,19 +10,19 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
 	title: {
-		default: "DaQi UAV - Professional UAV Solutions & Components",
-		template: "%s - DaQi UAV"
+		default: "Wurenji UAV - Professional Drone Manufacturer",
+		template: "%s - Wurenji UAV"
 	},
-	description: "Leading manufacturer of long-range UAVs, high-performance motors, and fiber optic communication systems for unmanned aerial vehicles.",
+	description: "Professional manufacturer of FPV racing drones and heavy-lift industrial UAVs, offering complete product lines from 7-inch to 15-inch hexacopter.",
 	openGraph: {
-		title: "DaQi UAV - Professional UAV Solutions",
-		description: "Leading manufacturer of long-range UAVs, high-performance motors, and fiber optic communication systems.",
+		title: "Wurenji UAV - Professional Drone Manufacturer",
+		description: "Professional manufacturer of FPV racing drones and heavy-lift industrial UAVs.",
 		images: [
 			{
 				url: "/opengraph-image.png",
 				width: 1200,
 				height: 630,
-				alt: "DaQi UAV"
+				alt: "Wurenji UAV"
 			}
 		],
 		locale: "en_US",
@@ -31,14 +31,14 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: {
-			default: "DaQi UAV",
-			template: "%s - DaQi UAV"
+			default: "Wurenji UAV",
+			template: "%s - Wurenji UAV"
 		},
-		description: "Leading manufacturer of long-range UAVs and components.",
+		description: "Professional manufacturer of FPV racing and heavy-lift drones.",
 		images: [
 			{
 				url: "/opengraph-image.png",
-				alt: "DaQi UAV"
+				alt: "Wurenji UAV"
 			}
 		]
 	}

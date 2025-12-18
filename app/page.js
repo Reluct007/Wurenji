@@ -8,8 +8,8 @@ import FAQ from "@/components/features/faq";
 
 // Metadata
 export const metadata = {
-	title: "DaQi UAV - Advanced Unmanned Aerial Systems",
-	description: "Professional grade UAVs, motors, and fiber optic solutions for industrial applications."
+	title: "Wurenji UAV - Professional Drone Manufacturer",
+	description: "Professional manufacturer of FPV racing drones and heavy-lift industrial UAVs."
 };
 
 // Structured Data
