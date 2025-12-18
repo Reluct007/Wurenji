@@ -6,12 +6,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { product } from "@/data/product";
 
-// Generate static params for all product slugs
-export async function generateStaticParams() {
-	return product.map((item) => ({
-		slug: item.slug.replace('/', '')
-	}));
-}
+export const runtime = 'edge';
 
 // Metadata
 

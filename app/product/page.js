@@ -5,6 +5,8 @@ import { getPagination } from "@/lib/utils";
 import PaginationBlock from "@/components/widgets/pagination-block";
 import { notFound } from "next/navigation";
 
+export const runtime = 'edge';
+
 const header = {
 	title: "All Products",
 	focus: "Products",

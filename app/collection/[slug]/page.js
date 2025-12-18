@@ -6,12 +6,7 @@ import { getPagination } from "@/lib/utils";
 import { notFound } from "next/navigation";
 import { product } from "@/data/product";
 
-// Generate static params for all collection slugs
-export async function generateStaticParams() {
-	return collection.map((item) => ({
-		slug: item.slug.replace('/', '')
-	}));
-}
+export const runtime = 'edge';
 
 // Metadata
 export function generateMetadata({ params }) {
