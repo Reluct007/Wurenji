@@ -6,6 +6,8 @@ import { getPagination } from "@/lib/utils";
 import { notFound } from "next/navigation";
 import { product } from "@/data/product";
 
+export const runtime = 'edge';
+
 // Metadata
 export function generateMetadata({ params }) {
 	const { slug } = params;

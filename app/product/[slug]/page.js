@@ -6,6 +6,8 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { product } from "@/data/product";
 
+export const runtime = 'edge';
+
 // Metadata
 
 export default function Product({ params }) {

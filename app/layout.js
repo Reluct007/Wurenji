@@ -8,8 +8,6 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const runtime = "edge";
-
 export const metadata = {
 	title: {
 		default: "DaQi UAV - Professional UAV Solutions & Components",
