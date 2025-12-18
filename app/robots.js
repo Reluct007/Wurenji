@@ -1,9 +1,11 @@
+export const dynamic = 'force-static'
+
 export default function robots() {
 	return {
 		rules: {
 			userAgent: "*",
 			disallow: "/"
 		},
-		sitemap: `${process.env.ROOT_URL}/sitemap.xml`
+		sitemap: `https://wurenji-3gs.pages.dev/sitemap.xml`
 	};
 }
