@@ -1,6 +1,6 @@
 export const navbar = {
 	brand: {
-		name: "Wurenji UAV",
+		name: "AERONEX",
 		logo: "/logo.svg"
 	},
 	menu: [
@@ -281,13 +281,13 @@ export const testimonials = {
 			name: "David Zhang",
 			image: "https://randomuser.me/api/portraits/men/32.jpg",
 			position: "Operations Director, SecurePatrol",
-			comment: "The flight endurance of Wurenji's FPV racing drones has revolutionized our surveillance operations. The 50-minute flight time and 15km range are game-changers."
+			comment: "The flight endurance of AERONEX's FPV racing drones has revolutionized our surveillance operations. The 50-minute flight time and 15km range are game-changers."
 		},
 		{
 			name: "Sarah Miller",
 			image: "https://randomuser.me/api/portraits/women/44.jpg",
 			position: "Lead Engineer, AeroTech Solutions",
-			comment: "We've tested many heavy-lift drones, but Wurenji's 15'' hexacopter with 18kg payload capacity is unmatched. The redundancy and reliability are exceptional for our industrial applications."
+			comment: "We've tested many heavy-lift drones, but AERONEX's 15'' hexacopter with 18kg payload capacity is unmatched. The redundancy and reliability are exceptional for our industrial applications."
 		},
 		{
 			name: "James Wilson",
@@ -299,7 +299,7 @@ export const testimonials = {
 			name: "Robert Chen",
 			image: "https://randomuser.me/api/portraits/men/67.jpg",
 			position: "CEO, AgriScan",
-			comment: "Wurenji's heavy-lift drones carry our agricultural sensors with ease. The 42-minute endurance allows us to cover large farmlands in a single flight. Excellent technical support."
+			comment: "AERONEX's heavy-lift drones carry our agricultural sensors with ease. The 42-minute endurance allows us to cover large farmlands in a single flight. Excellent technical support."
 		},
 		{
 			name: "Emily Davis",

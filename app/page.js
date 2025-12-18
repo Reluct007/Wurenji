@@ -9,7 +9,7 @@ import FAQ from "@/components/features/faq";
 // Metadata
 export const metadata = {
 	title: "Home",
-	description: "Wurenji UAV - Leading manufacturer of high-performance FPV racing drones (Mark 7'', Mark 10'') and heavy-lift industrial UAVs (13''-15'' hexacopters). Featuring up to 160km/h speed, 18kg payload capacity, 50-minute flight time, and 15km video transmission. Professional drone solutions with OEM customization for racing, aerial photography, industrial inspection, and logistics."
+	description: "AERONEX - Leading manufacturer of high-performance FPV racing drones (Mark 7'', Mark 10'') and heavy-lift industrial UAVs (13''-15'' hexacopters). Featuring up to 160km/h speed, 18kg payload capacity, 50-minute flight time, and 15km video transmission. Professional drone solutions with OEM customization for racing, aerial photography, industrial inspection, and logistics."
 };
 
 // Structured Data

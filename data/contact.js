@@ -8,12 +8,12 @@ export const contact = {
 		{
 			label: "Sales Inquiry",
 			description: "Product info & quotes",
-			value: "sales@wurenji-uav.com"
+			value: "sales@aeronex.com"
 		},
 		{
 			label: "Technical Support",
 			description: "Product assistance",
-			value: "support@wurenji-uav.com"
+			value: "support@aeronex.com"
 		},
 		{
 			label: "Address",
