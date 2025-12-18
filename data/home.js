@@ -1,93 +1,93 @@
 export const navbar = {
 	brand: {
-		name: "DaQi UAV",
+		name: "Wurenji UAV | 无人机",
 		logo: "/images/product_2025_p1_0.png"
 	},
 	menu: [
-		{ label: "Home", href: "/" },
-		{ label: "Collection", href: "/collection" },
-		{ label: "Products", href: "/product" },
-		{ label: "About", href: "/about" },
-		{ label: "Contact", href: "/contact" }
+		{ label: "首页 Home", href: "/" },
+		{ label: "产品分类 Categories", href: "/collection" },
+		{ label: "所有产品 Products", href: "/product" },
+		{ label: "关于我们 About Us", href: "/about" },
+		{ label: "联系我们 Contact Us", href: "/contact" }
 	],
 	button: {
-		text: "Get Quote",
-		title: "Request a Quote",
-		description: "Tell us about your project requirements and we'll get back to you with a customized solution."
+		text: "获取报价 Get Quote",
+		title: "Request a Quote | 获取报价",
+		description: "告诉我们您的项目需求，我们将为您提供定制化解决方案 / Tell us about your project requirements and we'll get back to you with a customized solution."
 	}
 };
 
 export const hero = {
-	title: "Advanced Long-Range UAV Solutions",
-	focus: "UAV Solutions",
+	title: "专业无人机制造商 Professional UAV Manufacturer",
+	focus: "无人机 UAV",
 	bg_image: "/images/uav_intro_p1_0.jpg",
-	description: "Professional manufacturer of long-endurance patrol drones, high-efficiency motors, and fiber optic communication systems for industrial applications.",
+	description: "专注于FPV竞速无人机和重载工业无人机的研发制造，提供从7英寸到15英寸六轴的全系列产品，支持OEM定制和全球发货 / Specialized in FPV racing and heavy-lift industrial drones, offering complete product lines from 7-inch to 15-inch hexacopter, with OEM customization and global shipping.",
 	button: [
 		{
-			title: "View Products",
+			title: "查看产品 View Products",
 			variant: "default",
 			href: "/product"
 		},
 		{
-			title: "Contact Us",
+			title: "联系我们 Contact Us",
 			variant: "outline",
 			href: "/contact"
 		}
 	],
 	feature: [
 		{
-			title: "Long Range",
-			description: "Extended flight endurance"
+			title: "高速飞行 High Speed",
+			description: "最高时速160km/h / Max 160km/h"
 		},
 		{
-			title: "High Stability",
-			description: "Reliable fiber optic comms"
+			title: "超长续航 Long Endurance",
+			description: "最长50分钟续航 / Up to 50min"
 		},
 		{
-			title: "Industrial Grade",
-			description: "Built for harsh environments"
+			title: "重载能力 Heavy Payload",
+			description: "最大载重18公斤 / Max 18kg"
 		},
 		{
-			title: "Customizable",
-			description: "Tailored to mission needs"
+			title: "OEM定制 Customizable",
+			description: "支持批量定制 / Bulk customization"
 		}
 	]
 };
 
 export const featuredCategories = {
-	title: "Our Core Products",
-	focus: "Core Products",
-	cta_text: "View All Products",
+	title: "核心产品系列 Our Core Product Lines",
+	focus: "核心产品 Core Products",
+	cta_text: "查看所有产品 View All Products",
 	cta_link: "/product",
-	description: "Comprehensive solutions for unmanned aerial systems, from complete airframes to critical components.",
+	description: "从高速FPV竞速机到重载工业无人机，我们提供全系列专业无人机解决方案 / From high-speed FPV racing drones to heavy-lift industrial UAVs, we offer complete professional drone solutions.",
 	items: [
 		{
-			title: "Long-Range UAVs",
-			focus: "UAVs",
-			slug: "/long-range-uavs",
-			image: "/images/uav_intro_p3_3.jpg",
-			description: "High-endurance patrol drones designed for surveillance, mapping, and inspection missions."
+			title: "FPV竞速无人机 / FPV Racing Drones",
+			focus: "FPV Racing",
+			slug: "/fpv-racing-drones",
+			image: "/images/pd1.png",
+			description: "7-10英寸高速FPV无人机，最高时速160km/h，图传距离15公里 / 7-10 inch high-speed FPV drones, max speed 160km/h, 15km video transmission."
 		},
 		{
-			title: "Drone Motors",
-			focus: "Motors",
-			slug: "/drone-motors",
-			image: "/images/motor_catalog_p2_1.png",
-			description: "High-efficiency brushless motors engineered for optimal lift and flight time."
+			title: "重载无人机 / Heavy-Lift Drones",
+			focus: "Heavy-Lift",
+			slug: "/heavy-lift-drones",
+			image: "/images/sc2.png",
+			description: "13-15英寸专业重载机，载重6-18公斤，适合工业应用 / 13-15 inch professional heavy-lift drones, 6-18kg payload, for industrial applications."
 		},
 		{
-			title: "Fiber Optic Systems",
-			focus: "Fiber Optics",
-			slug: "/fiber-optic-systems",
-			image: "/images/fiber_catalog_p1_0.jpg",
-			description: "Reliable fiber optic spools and modules for interference-free data transmission."
+			title: "长航时巡飞 / Long-Endurance UAVs",
+			focus: "Long-Endurance",
+			slug: "/long-endurance-uavs",
+			image: "/images/uav_intro_p1_0.jpg",
+			description: "超长续航巡飞无人机，最长50分钟飞行时间 / Ultra-long endurance patrol UAVs, up to 50 minutes flight time."
 		},
 		{
-			title: "Ground Control",
-			focus: "Control",
-			slug: "/ground-control",
-			image: "/images/product_2025_p16_45.png",
-			description: "Advanced ground control stations and communication modules."
+			title: "定制方案 / Custom Solutions",
+			focus: "Custom",
+			slug: "/custom-solutions",
+			image: "/images/product_2025_p13_37.png",
+			description: "支持OEM定制和批量订购，提供全球代发货服务 / OEM customization and bulk orders available, global dropshipping service."
 		}
 	]
 };

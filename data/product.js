@@ -1,161 +1,172 @@
 export const product = [
 	{
-		title: "Long-Endurance Patrol UAV",
-		focus: "Patrol UAV",
-		slug: "/long-endurance-patrol-uav",
-		collection: "Long-Range UAVs",
-		description: "A high-performance fixed-wing UAV designed for long-range surveillance and inspection missions with extended flight time.",
-		main_image: "/images/uav_intro_p1_0.jpg",
-		image_list: ["/images/uav_intro_p2_1.jpg", "/images/uav_intro_p2_2.jpg", "/images/uav_intro_p3_3.jpg"],
+		title: "Mark 7'' FPV Racing Drone",
+		focus: "Mark 7''",
+		slug: "/mark-7-fpv-drone",
+		collection: "FPV Racing Drones",
+		description: "High-speed FPV racing drone with max speed of 150 km/h, ideal for professional racing and aerial photography missions.",
+		main_image: "/images/pd1.png",
+		image_list: ["/images/53.png", "/images/54.png", "/images/55.png"],
+		price: "$1,350.00",
 		product_description: [
-			"The Long-Endurance Patrol UAV is engineered for missions requiring extended flight times and stable aerial platforms. Its aerodynamic design minimizes drag while maximizing lift, allowing for efficient cruising over vast distances.",
-			"Equipped with a modular payload bay, it can carry various sensors including high-resolution cameras, thermal imagers, and LiDAR systems. The airframe is constructed from lightweight carbon fiber composites, ensuring durability without compromising on weight.",
-			"Ideal for border patrol, pipeline inspection, and environmental monitoring, this UAV offers a reliable solution for automated aerial data collection."
+			"The Mark 7'' is a high-performance FPV drone designed specifically for racing and long-endurance flights. Built with a lightweight carbon fiber frame and equipped with efficient 2807 motors, it achieves a maximum flight speed of 150 km/h.",
+			"Equipped with VXT 1.6W 5.8G video transmission system, the maximum flight distance can reach 8 kilometers. Empty endurance time is 29 minutes, and rated load endurance is 14 minutes, meeting various flight requirements.",
+			"Supports BetaFlight and INAV firmware, compatible with ELRS 915M receiver, providing pilots with a stable and reliable control experience. Perfect for racing, freestyle, and long-range cruising."
 		],
 		product_parameter: [
-			"Wingspan: 3.5 meters",
-			"Max Flight Time: 4+ hours",
-			"Cruise Speed: 80 km/h",
-			"Max Payload: 5 kg",
-			"Communication Range: 50+ km",
-			"Material: Carbon Fiber Composite"
+			"Max Speed: 150 km/h",
+			"Rated Load: 1.5 kg",
+			"Max Load: 2 kg",
+			"VTX: 1.6W 5.8G 40CH, up to 8km",
+			"Empty Endurance: 29 minutes (6S 8000mAh)",
+			"Loaded Endurance: 14 minutes (6S 10000mAh)",
+			"Wheelbase: 312 mm",
+			"Motor: 4× 2807 1350KV 6S",
+			"Flight Controller: F4 F405 (BF/INAV compatible)",
+			"ESC: E601D 60A 8Bit 2-6S",
+			"Net Weight: 540 g",
+			"Recommended Battery: 6S 8000mAh 50C XT60"
 		],
 		faq: [
-			{ question: "What is the maximum operational altitude?", answer: "The UAV can operate effectively up to 4,500 meters ASL." },
-			{ question: "Is it weather resistant?", answer: "Yes, it is rated for light rain and wind resistance up to Level 5." },
-			{ question: "Does it support autonomous flight?", answer: "Yes, it supports full waypoint navigation and auto-return features." },
-			{ question: "What is the setup time?", answer: "The system can be assembled and ready for flight in under 15 minutes." }
+			{ question: "Is this drone suitable for beginners?", answer: "We recommend some FPV flying experience before using this model. Training services are available to help you get started quickly." },
+			{ question: "Can the video transmission really reach 8 kilometers?", answer: "In open environments without obstructions, combined with directional antennas, it can reach 8 kilometers. Actual distance is affected by environmental conditions." },
+			{ question: "What flight controller firmware is supported?", answer: "Supports both BetaFlight and INAV firmware, you can choose based on your needs." }
 		]
 	},
 	{
-		title: "Heavy-Lift Multirotor Drone",
-		focus: "Heavy Lift",
-		slug: "/heavy-lift-multirotor",
-		collection: "Long-Range UAVs",
-		description: "A robust multirotor platform capable of carrying heavy payloads for logistics and industrial applications.",
-		main_image: "/images/uav_intro_p5_4.jpg",
-		image_list: ["/images/uav_intro_p5_5.jpg", "/images/uav_intro_p6_6.jpg"],
+		title: "Mark 10'' FPV Racing Drone",
+		focus: "Mark 10''",
+		slug: "/mark-10-fpv-drone",
+		collection: "FPV Racing Drones",
+		description: "Mid-size FPV drone with strong payload capacity, max speed 160 km/h, and 15km video transmission range.",
+		main_image: "/images/pd2.png",
+		image_list: ["/images/56.png", "/images/57.png", "/images/sc1.png"],
+		price: "$1,595.00",
 		product_description: [
-			"Designed for power and stability, the Heavy-Lift Multirotor features a hexacopter or octocopter configuration to ensure redundancy and lifting capability. It is the workhorse for aerial delivery and heavy sensor integration.",
-			"With advanced flight controllers and high-torque motors, it maintains precise hovering even in challenging wind conditions. The foldable arm design allows for easy transport and rapid deployment.",
-			"Applications include medical supply delivery, agricultural spraying, and carrying professional cinema cameras."
+			"The Mark 10'' is a more powerful FPV drone with a 396mm wheelbase, equipped with 3115 900KV high-torque motors, capable of carrying heavier equipment during flight.",
+			"Features VXT 5.8G 3W video transmission system with a maximum flight distance of 15 kilometers. Rated payload of 3kg and maximum payload of 4kg, suitable for carrying professional photography equipment or other payloads.",
+			"Empty endurance of 28 minutes, loaded endurance of 10 minutes 20 seconds. Uses 7mm thick carbon fiber arms for a more robust and durable structure."
 		],
 		product_parameter: [
-			"Wheelbase: 1200 mm",
-			"Max Takeoff Weight: 25 kg",
-			"Max Payload: 10 kg",
-			"Flight Time (with payload): 25-30 minutes",
-			"Wind Resistance: 12 m/s",
-			"Battery: High-capacity LiPo / Li-ion"
+			"Max Speed: 160 km/h",
+			"Rated Load: 3 kg",
+			"Max Load: 4 kg",
+			"VTX: 5.8G 48CH 3W, up to 15km",
+			"Empty Endurance: 28 minutes (6S 8000mAh)",
+			"Loaded Endurance: 10min 20sec (6S 10000mAh)",
+			"Wheelbase: 396 mm",
+			"Motor: 4× 3115 900KV 6S",
+			"Flight Controller: F4 F405 (BF/INAV compatible)",
+			"ESC: E601D 60A 8Bit 2-6S",
+			"Net Weight: 793 g",
+			"Recommended Battery: 6S 10000mAh 25C"
 		],
 		faq: [
-			{ question: "Can it carry liquids?", answer: "Yes, it is compatible with liquid tanks for spraying applications." },
-			{ question: "What happens if a motor fails?", answer: "The redundant motor configuration allows for a safe landing in case of single motor failure." },
-			{ question: "Is training required?", answer: "We recommend our professional training course for safe operation of heavy-lift drones." }
+			{ question: "What advantages does it have over the 7-inch version?", answer: "The 10-inch version has stronger payload capacity and longer transmission range, suitable for applications requiring heavier equipment." },
+			{ question: "Can it be used for aerial photography?", answer: "Absolutely, its powerful payload capacity can carry professional aerial cameras with excellent stability." }
 		]
 	},
 	{
-		title: "Brushless Drone Motor 5010",
-		focus: "5010 Motor",
-		slug: "/brushless-motor-5010",
-		collection: "Drone Motors",
-		description: "High-efficiency brushless motor designed for long-endurance multirotors.",
-		main_image: "/images/motor_catalog_p2_1.png",
-		image_list: ["/images/motor_catalog_p2_0.png", "/images/motor_catalog_p2_2.png"],
+		title: "FPV 13'' Heavy-Lift Drone",
+		focus: "FPV 13''",
+		slug: "/fpv-13-heavy-lift",
+		collection: "Heavy-Lift Drones",
+		description: "Professional heavy-lift drone with 6kg rated payload, 38-minute empty endurance, ideal for industrial inspection and logistics.",
+		main_image: "/images/sc2.png",
+		image_list: ["/images/uav_intro_p2_1.jpg", "/images/uav_intro_p2_2.jpg", "/images/product_2025_p12_33.png"],
+		price: "$2,450.00",
 		product_description: [
-			"The 5010 series brushless motor is optimized for low KV and high torque, making it perfect for driving large propellers efficiently. It features high-quality bearings and high-temperature copper winding.",
-			"The open design ensures excellent heat dissipation during operation. Each motor is dynamically balanced to reduce vibration and extend the lifespan of your drone's bearings and frame.",
-			"Suitable for quadcopters and hexacopters intended for aerial photography and survey missions."
+			"The FPV 13'' is a professional-grade heavy-lift drone with a 600mm wheelbase, featuring 10mm thick carbon fiber arms for an extremely robust structure. Equipped with 4214 440KV motors specifically designed for heavy payloads.",
+			"Rated payload of 6kg and maximum payload of 7kg, with empty endurance up to 38 minutes. Uses a dual 8S battery power system providing ample power reserves.",
+			"Features 80A ESC and 5.8G 3W video transmission system with a maximum flight distance of 15 kilometers. Suitable for industrial inspection, agricultural spraying, logistics, and other professional applications."
 		],
 		product_parameter: [
-			"KV Value: 360 KV",
-			"Stator Diameter: 50 mm",
-			"Stator Thickness: 10 mm",
-			"Max Continuous Current: 30A",
-			"Max Continuous Power: 750W",
-			"Weight: 180g"
+			"Max Speed: 130 km/h",
+			"Rated Load: 6 kg",
+			"Max Load: 7 kg",
+			"VTX: 5.8G 48CH 3W, up to 15km",
+			"Empty Endurance: 38 minutes (2×8S 8000mAh)",
+			"Loaded Endurance: 11 minutes (2×8S 8000mAh)",
+			"Wheelbase: 600 mm",
+			"Arm Thickness: 10 mm",
+			"Motor: 4× 4214 440KV 8S",
+			"Flight Controller: F4 F405 (BF/INAV compatible)",
+			"ESC: 80A V1 Single 3-8S",
+			"Net Weight: 1850 g",
+			"Recommended Battery: 2×8S 8000mAh 30C"
 		],
 		faq: [
-			{ question: "What propeller size is recommended?", answer: "We recommend 16 to 18-inch carbon fiber propellers." },
-			{ question: "Is the prop adapter included?", answer: "Yes, a standard prop adapter and mounting screws are included." },
-			{ question: "What ESC should I use?", answer: "A 40A-50A ESC is recommended for best performance." }
+			{ question: "What application scenarios is it suitable for?", answer: "Suitable for industrial inspection, power line patrol, agricultural spraying, emergency rescue, logistics, and other professional scenarios requiring heavy payloads." },
+			{ question: "What is the endurance time?", answer: "Empty endurance is 38 minutes, and with 6kg payload it can fly for 11 minutes, showing excellent performance." }
 		]
 	},
 	{
-		title: "Fiber Optic Tether System",
-		focus: "Tether System",
-		slug: "/fiber-optic-tether",
-		collection: "Fiber Optic Systems",
-		description: "Secure, jamming-resistant data link for UAVs using ultra-lightweight fiber optic cables.",
-		main_image: "/images/fiber_catalog_p1_0.jpg",
-		image_list: ["/images/fiber_catalog_p2_1.jpg", "/images/fiber_catalog_p3_2.jpg"],
+		title: "FPV 15'' Heavy-Lift Drone",
+		focus: "FPV 15''",
+		slug: "/fpv-15-heavy-lift",
+		collection: "Heavy-Lift Drones",
+		description: "Large heavy-lift drone with 7kg rated payload, 42-minute empty endurance, for professional industrial applications.",
+		main_image: "/images/sc3.png",
+		image_list: ["/images/uav_intro_p5_4.jpg", "/images/uav_intro_p5_5.jpg", "/images/product_2025_p13_37.png"],
+		price: "$2,700.00",
 		product_description: [
-			"Our Fiber Optic Tether System provides a physical, unjammable link between the ground station and the UAV. This ensures high-bandwidth video and data transmission even in environments with heavy RF interference.",
-			"The system uses a specially designed ultra-thin and strong fiber optic cable that spools out from the drone or ground winch. It is immune to electromagnetic interference (EMI) and radio frequency jamming.",
-			"Crucial for defense, security, and inspection operations in sensitive areas."
+			"The FPV 15'' is our flagship heavy-lift drone with a 647mm wheelbase, featuring an extra-large design that provides exceptional stability and payload capacity.",
+			"Equipped with 4214 380KV motors and 1507 tri-blade propellers, rated payload of 7kg and maximum payload of 8kg. Empty endurance up to 42 minutes, loaded endurance of 12 minutes.",
+			"Uses dual 8S battery system, 80A single ESC, and 5.8G 3W video transmission. Suitable for professional applications requiring ultra-long endurance and heavy payloads, such as long-distance inspection and heavy equipment transportation."
 		],
 		product_parameter: [
-			"Cable Length: Up to 10 km options",
-			"Data Rate: 1 Gbps / 10 Gbps",
-			"Cable Weight: < 1g/m",
-			"Tensile Strength: High-strength Aramid reinforced",
-			"Connector Type: LC/SC/FC compatible"
+			"Max Speed: 130 km/h",
+			"Rated Load: 7 kg",
+			"Max Load: 8 kg",
+			"VTX: 5.8G 48CH 3W, up to 15km",
+			"Empty Endurance: 42 minutes (2×8S 8000mAh)",
+			"Loaded Endurance: 12 minutes (2×8S 8000mAh)",
+			"Wheelbase: 647 mm",
+			"Arm Thickness: 10 mm",
+			"Motor: 4× 4214 380KV 8S",
+			"Flight Controller: F4 F405 (BF/INAV compatible)",
+			"ESC: 80A Single 3-8S",
+			"Net Weight: 2050 g",
+			"Recommended Battery: 2×8S 8000mAh 30C"
 		],
 		faq: [
-			{ question: "Does the cable affect flight dynamics?", answer: "The cable is extremely lightweight and has minimal drag impact." },
-			{ question: "Is the cable reusable?", answer: "We offer both disposable deployment canisters and reusable winch systems." },
-			{ question: "What happens if a cable breaks?", answer: "The UAV will switch to backup radio link or initiate auto-return protocols." }
+			{ question: "What's the difference from the 13-inch version?", answer: "The 15-inch version has greater payload, longer endurance, better stability, suitable for more professional applications." },
+			{ question: "Can it be customized?", answer: "Yes, we support OEM customization services and can provide personalized configuration according to your needs." }
 		]
 	},
 	{
-		title: "Ground Control Station GCS-Pro",
-		focus: "GCS-Pro",
-		slug: "/gcs-pro",
-		collection: "Ground Control",
-		description: "Professional portable ground control station with dual screens and long-range telemetry.",
-		main_image: "/images/product_2025_p16_45.png",
-		image_list: ["/images/product_2025_p16_46.png", "/images/product_2025_p16_47.png"],
+		title: "FPV 15'' X6 Heavy-Lift Hexacopter",
+		focus: "FPV 15'' X6",
+		slug: "/fpv-15-x6-hexacopter",
+		collection: "Heavy-Lift Drones",
+		description: "Hexacopter ultra-heavy-lift drone with 15kg rated payload, 50-minute empty endurance, industrial flagship product.",
+		main_image: "/images/about.png",
+		image_list: ["/images/uav_intro_p6_6.jpg", "/images/uav_intro_p6_7.jpg", "/images/product_2025_p14_39.png"],
+		price: "$5,400.00",
 		product_description: [
-			"The GCS-Pro is an all-in-one portable ground control station designed for professional UAV operators. It features dual high-brightness touchscreens for map navigation and video feed monitoring simultaneously.",
-			"Built into a ruggedized case, it is water and dust resistant. It integrates a high-performance computer, long-range radio links, and ergonomic joystick controls.",
-			"Compatible with Mission Planner, QGroundControl, and other major flight control software."
+			"The FPV 15'' X6 is our flagship product, featuring a six-motor configuration that provides ultimate payload capacity and flight redundancy. Wheelbase of 780mm, body dimensions 827×827mm.",
+			"Equipped with 6× 5315 440KV high-torque motors, rated payload up to 15kg and maximum payload of 18kg. Impressive empty endurance of 50 minutes, and can still fly for 11 minutes even with a 15kg payload.",
+			"Features F405 ICM8S flight controller system, 80A single ESC, and dual 8S 16000mAh high-capacity batteries. The hexacopter design provides higher safety - it can still land safely even if a single motor fails. Suitable for extreme applications such as heavy equipment transportation, large aerial photography equipment, and emergency rescue."
 		],
 		product_parameter: [
-			"Display: Dual 15.6 inch high-brightness (1000 nits)",
-			"CPU: Intel i7",
-			"Battery Life: 4-6 hours",
-			"Video Output: HDMI / SDI",
-			"Operating System: Windows 10 / Linux"
+			"Max Speed: 130 km/h",
+			"Rated Load: 15 kg",
+			"Max Load: 18 kg",
+			"VTX: 5.8G 48CH 3W, up to 15km",
+			"Empty Endurance: 50 minutes (2×8S 16000mAh)",
+			"Loaded Endurance: 11 minutes (2×8S 16000mAh)",
+			"Body Size: 827×827×80 mm",
+			"Wheelbase: 780 mm",
+			"Motor: 6× 5315 440KV 8S",
+			"Flight Controller: F405 ICM8S",
+			"ESC: 80A Single 3-8S",
+			"Propeller: 1507 Tri-blade (6 pcs)",
+			"Net Weight: 4280 g"
 		],
 		faq: [
-			{ question: "Is it sunlight readable?", answer: "Yes, the high-brightness screens are designed for outdoor use." },
-			{ question: "Can I customize the joysticks?", answer: "Yes, joystick modes and sensitivity are fully customizable." },
-			{ question: "What is the radio range?", answer: "Depending on the integrated module, range can exceed 30km." }
-		]
-	},
-	{
-		title: "UAV Parachute Recovery System",
-		focus: "Recovery System",
-		slug: "/parachute-recovery",
-		collection: "Components",
-		description: "Emergency parachute system for UAVs, ensuring safe landing during failure.",
-		main_image: "/images/product_2025_p18_51.png",
-		image_list: ["/images/product_2025_p18_52.png", "/images/product_2025_p18_53.png"],
-		product_description: [
-			"The UAV Parachute Recovery System is a critical safety component for expensive payloads and operations over populated areas. It automatically deploys in milliseconds upon detecting freefall or critical failure.",
-			"Lightweight and compact, it integrates seamlessly with most UAV platforms. The parachute is made from high-strength nylon and packed using a specialized compression method.",
-			"Reusable and easy to repack after deployment."
-		],
-		product_parameter: [
-			"Deployment Time: < 0.5s",
-			"Min Deployment Altitude: 30m",
-			"Descent Rate: < 4.5m/s",
-			"System Weight: 500g",
-			"Trigger: Auto-sensing + Manual remote"
-		],
-		faq: [
-			{ question: "Can I reuse it after deployment?", answer: "Yes, the parachute can be repacked and reused." },
-			{ question: "How does it detect failure?", answer: "It uses onboard IMU sensors to detect abnormal attitude and descent rates." }
+			{ question: "Why choose hexacopter design?", answer: "Hexacopter design provides higher safety and payload capacity. It can fly safely even if one motor fails, suitable for high-value payload transportation." },
+			{ question: "What type of customers is it suitable for?", answer: "Suitable for professional users requiring ultra-heavy payloads, such as film and television aerial photography, industrial inspection, emergency rescue, and research institutions." },
+			{ question: "Do you support bulk purchases?", answer: "Yes, we support bulk orders and provide OEM services and global dropshipping." }
 		]
 	}
 ];
