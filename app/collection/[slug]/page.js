@@ -24,7 +24,7 @@ export default async function Category({ params, searchParams }) {
 	const collection_data = collection.find((item) => item.slug === `/${slug}`);
 	if (!collection_data) return notFound();
 
-	const product_data = product.filter((item) => item.collection === collection_data.title);
+	const product_data = product.filter((item) => item.category === collection_data.title);
 	if (!product_data) return notFound();
 
 	const { page } = (await searchParams) || "1";
@@ -76,8 +76,8 @@ export default async function Category({ params, searchParams }) {
 			<PageHeader data={header} />
 
 			<div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-8 gap-6">
-				{pageData.map((item) => (
-					<ProductCard key={item.slug} data={item} />
+				{pageData.map((item, index) => (
+					<ProductCard key={index} data={item} />
 				))}
 			</div>
 

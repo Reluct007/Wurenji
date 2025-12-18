@@ -1,7 +1,7 @@
 export const navbar = {
 	brand: {
 		name: "Wurenji UAV",
-		logo: "/images/product_2025_p1_0.png"
+		logo: "/logo.svg"
 	},
 	menu: [
 		{ label: "Home", href: "/" },
