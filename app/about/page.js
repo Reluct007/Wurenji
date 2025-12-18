@@ -64,10 +64,12 @@ export default function About() {
 			<section className="container grid grid-cols-1 md:grid-cols-2 mt-12 gap-6">
 				<div className="rounded-lg shadow-md space-y-4 p-8">
 					<h2 className="text-xl font-semibold">{data.why_choose_us.title}</h2>
-					{data.why_choose_us.description.map((item, index) => (
-						<p key={index} className="mt-2 text-muted-foreground">
-							{item}
-						</p>
+					{data.why_choose_us.items.map((item, index) => (
+						<div key={index} className="mt-4">
+							<p className="text-muted-foreground">
+								<span className="font-semibold text-foreground">{item.title}:</span> {item.description}
+							</p>
+						</div>
 					))}
 				</div>
 				<Image src={data.why_choose_us.image} alt={data.why_choose_us.title} className="w-full h-full rounded-lg shadow-md" width={800} height={500} />

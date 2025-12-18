@@ -1,13 +1,13 @@
 "use client";
 
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { useState, useTransition, useRef } from "react";
-import { contact } from "@/lib/action/contact.action";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import Link from "next/link";
+import { useState } from "react";
 import { toast } from "sonner";
+import Link from "next/link";
+import axios from "axios";
 
 export default function ContactForm() {
 	const [data, setData] = useState({
@@ -16,103 +16,63 @@ export default function ContactForm() {
 		email: "",
 		phone: "",
 		quantity: "",
-		message: "",
-		files: []
+		message: ""
 	});
 
-	const [isPending, startTransition] = useTransition();
-	const fileInputRef = useRef(null);
-	const isValidEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-
 	const onChangeHandler = (e) => {
-		const { name, value } = e.target;
-		setData((prev) => ({
-			...prev,
+		const name = e.target.name;
+		const value = e.target.value;
+		setData({
+			...data,
 			[name]: value
-		}));
-	};
-
-	const onFileChange = (e) => {
-		const files = Array.from(e.target.files);
-		setData((prev) => ({
-			...prev,
-			files: files
-		}));
-	};
-
-	const handleSubmit = (e) => {
-		e.preventDefault();
-		if (!data.name) {
-			toast.error("Please enter your name.");
-			return;
-		}
-		if (!data.email || !isValidEmail(data.email)) {
-			toast.error("Please enter a valid email address.");
-			return;
-		}
-		if (!data.message) {
-			toast.error("Please enter a message.");
-			return;
-		}
-
-		startTransition(async () => {
-			try {
-				const formData = new FormData();
-				Object.entries(data).forEach(([key, value]) => {
-					if (key === "files") {
-						value.forEach((file, index) => {
-							formData.append(`file_${index}`, file);
-						});
-					} else {
-						formData.append(key, value);
-					}
-				});
-				formData.append("url", window.location.href);
-
-				const result = await contact(formData);
-
-				if (!result) {
-					throw new Error("Something went wrong, please try again later.");
-				}
-
-				if (result.success) {
-					setData({
-						name: "",
-						company: "",
-						email: "",
-						phone: "",
-						quantity: "",
-						message: "",
-						files: []
-					});
-					if (fileInputRef.current) {
-						fileInputRef.current.value = "";
-					}
-					toast.success(result.message);
-				} else {
-					toast.error(result.message);
-				}
-			} catch (error) {
-				toast.error("Something went wrong, please try again later.");
-			}
 		});
 	};
 
+	const onSubmitHandler = async (e) => {
+		e.preventDefault();
+		const formData = new FormData();
+		formData.append("name", data.name);
+		formData.append("company", data.company);
+		formData.append("email", data.email);
+		formData.append("phone", data.phone);
+		formData.append("quantity", data.quantity);
+		formData.append("message", data.message);
+
+		try {
+			const response = await axios.post("/api/touch", formData);
+			if (response.data.success) {
+				toast.success(response.data.msg);
+				setData({
+					name: "",
+					company: "",
+					email: "",
+					phone: "",
+					quantity: "",
+					message: ""
+				});
+			} else {
+				toast.error(response.data.msg);
+			}
+		} catch (error) {
+			toast.error("Error Submitting Info");
+		}
+	};
+
 	return (
-		<form onSubmit={handleSubmit}>
+		<form onSubmit={onSubmitHandler}>
 			<div className="w-full rounded-lg border shadow-md space-y-6 p-6">
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 					<div>
 						<label htmlFor="name" className="block mb-2.5 text-sm font-medium">
 							Name<span className="pl-1 text-red-500">*</span>
 						</label>
-						<Input id="name" name="name" type="text" value={data.name} onChange={onChangeHandler} disabled={isPending} required />
+						<Input id="name" name="name" type="text" value={data.name} onChange={onChangeHandler} required />
 					</div>
 					<div>
 						<label htmlFor="company" className="block mb-2.5 text-sm font-medium">
 							Company
 						</label>
-						<Input id="company" name="company" type="text" value={data.company} onChange={onChangeHandler} disabled={isPending} />
+						<Input id="company" name="company" type="text" value={data.company} onChange={onChangeHandler} />
 					</div>
 				</div>
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -120,27 +80,30 @@ export default function ContactForm() {
 						<label htmlFor="email" className="block mb-2.5 text-sm font-medium">
 							Email<span className="pl-1 text-red-500">*</span>
 						</label>
-						<Input id="email" name="email" type="email" value={data.email} onChange={onChangeHandler} disabled={isPending} required />
+						<Input id="email" name="email" type="email" value={data.email} onChange={onChangeHandler} required />
 					</div>
 					<div>
 						<label htmlFor="phone" className="block mb-2.5 text-sm font-medium">
 							Phone
 						</label>
-						<Input id="phone" name="phone" type="tel" value={data.phone} onChange={onChangeHandler} disabled={isPending} />
+						<Input id="phone" name="phone" type="tel" value={data.phone} onChange={onChangeHandler} />
 					</div>
 				</div>
 				<div>
 					<label htmlFor="quantity" className="block mb-2.5 text-sm font-medium">
 						Quote Quantity
 					</label>
-					<Select onValueChange={(value) => setData((prev) => ({ ...prev, quantity: value }))} value={data.quantity} disabled={isPending}>
+					<Select onValueChange={(value) => setData({ ...data, quantity: value })} value={data.quantity}>
 						<SelectTrigger id="quantity" name="quantity">
 							<SelectValue placeholder="Select" />
 						</SelectTrigger>
 						<SelectContent>
-							<SelectItem value="100">100</SelectItem>
+							<SelectItem value="300">300</SelectItem>
 							<SelectItem value="500">500</SelectItem>
+							<SelectItem value="750">750</SelectItem>
 							<SelectItem value="1000">1000</SelectItem>
+							<SelectItem value="1500">1500</SelectItem>
+							<SelectItem value="2000">2000</SelectItem>
 							<SelectItem value="3000">3000</SelectItem>
 							<SelectItem value="5000">5000</SelectItem>
 							<SelectItem value="other">Other</SelectItem>
@@ -151,37 +114,10 @@ export default function ContactForm() {
 					<label htmlFor="message" className="block mb-2.5 text-sm font-medium">
 						Message<span className="pl-1 text-red-500">*</span>
 					</label>
-					<Textarea id="message" name="message" value={data.message} onChange={onChangeHandler} className="min-h-[180px]" disabled={isPending} required />
-				</div>
-				<div>
-					<label htmlFor="files" className="block mb-2.5 text-sm font-medium">
-						File Upload
-					</label>
-					<div className="relative">
-						<Input 
-							id="files" 
-							name="files" 
-							type="file" 
-							multiple 
-							accept=".jpg,.jpeg,.png,.webp,.pdf,.doc,.docx,.xls,.xlsx" 
-							onChange={onFileChange} 
-							disabled={isPending} 
-							ref={fileInputRef}
-							className="cursor-pointer file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-primary file:text-primary-foreground hover:file:bg-primary/90 file:cursor-pointer"
-						/>
-					</div>
-					{data.files.length > 0 && (
-						<ul className="mt-2 text-xs space-y-1">
-							{data.files.map((file, index) => (
-								<li key={index} className="text-muted-foreground">📎 {file.name}</li>
-							))}
-						</ul>
-					)}
+					<Textarea id="message" name="message" value={data.message} onChange={onChangeHandler} className="min-h-[180px]" required />
 				</div>
 				<div className="flex flex-col space-y-2 pt-2">
-					<Button type="submit" disabled={isPending}>
-						{isPending ? "Submitting..." : "Get Free Quote"}
-					</Button>
+					<Button type="submit">Get Free Quote</Button>
 					<div className="text-xs text-muted-foreground">
 						View our{" "}
 						<Link href="/privacy-policy" className="underline hover:text-foreground">

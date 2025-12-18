@@ -30,11 +30,23 @@ export const about = {
 	why_choose_us: {
 		title: "Why Choose Us",
 		image: "/images/uav_intro_p6_6.jpg",
-		description: [
-			"**Professional R&D Team:** We have an experienced team of aerospace and electronics engineers constantly pushing product performance boundaries.",
-			"**Strict Quality Control:** Every drone undergoes rigorous flight testing and quality inspection to ensure product quality.",
-			"**Customization Service:** Support OEM/ODM customization, can provide personalized configuration and brand customization according to customer needs.",
-			"**Global Service:** Provide global shipping and technical support services for your peace of mind."
+		items: [
+			{
+				title: "Professional R&D Team",
+				description: "We have an experienced team of aerospace and electronics engineers constantly pushing product performance boundaries."
+			},
+			{
+				title: "Strict Quality Control",
+				description: "Every drone undergoes rigorous flight testing and quality inspection to ensure product quality."
+			},
+			{
+				title: "Customization Service",
+				description: "Support OEM/ODM customization, can provide personalized configuration and brand customization according to customer needs."
+			},
+			{
+				title: "Global Service",
+				description: "Provide global shipping and technical support services for your peace of mind."
+			}
 		]
 	},
 	our_capabilities: [

@@ -331,7 +331,7 @@ export const cta = {
 };
 
 export const footer = {
-	brand: "© 2025 DaQi UAV | All rights reserved.",
+	brand: "© 2025 JinQunYunFei | All rights reserved.",
 	policies: [
 		{
 			title: "Terms of Service",
