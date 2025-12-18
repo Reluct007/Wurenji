@@ -1,51 +1,38 @@
 "use client";
 
-import { subscription } from "@/lib/action/subscription.action";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "sonner";
-import { useState, useTransition } from "react";
+import { useState } from "react";
 import Link from "next/link";
+import axios from "axios";
 
 export default function SubscribeForm() {
 	const [email, setEmail] = useState("");
-	const [isPending, startTransition] = useTransition();
 
-	const isValidEmail = (email) => {
-		return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-	};
-
-	const handleSubscribe = (e) => {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
-		if (!email || !isValidEmail(email)) {
-			toast.error("Please enter a valid email address");
-			return;
-		}
-
-		startTransition(async () => {
-			try {
-				const formData = new FormData();
-				formData.append("email", email);
-				formData.append("url", window.location.href);
-				const result = await subscription(formData);
-				if (result.success) {
-					toast.success(result.message);
-					setEmail("");
-				} else {
-					toast.error(result.message);
-				}
-			} catch (error) {
-				toast.error("Subscribe failed, please try again later.");
+		const formData = new FormData();
+		formData.append("email", email);
+		try {
+			const response = await axios.post("/api/subscribe", formData);
+			if (response.data.success) {
+				setEmail("");
+				toast.success(response.data.msg);
+			} else {
+				toast.error(response.data.msg);
 			}
-		});
+		} catch (error) {
+			toast.error("Error submitting form");
+		}
 	};
 
 	return (
-		<form onSubmit={handleSubscribe}>
+		<form onSubmit={handleSubmit}>
 			<div className="flex w-full max-w-md items-center space-x-2">
-				<Input type="email" placeholder="Enter your email" className="h-10 lg:min-w-72" value={email} onChange={(e) => setEmail(e.target.value)} disabled={isPending} required />
-				<Button type="submit" className="h-10" disabled={isPending}>
-					{isPending ? "Subscrib..." : "Subscribe"}
+				<Input type="email" placeholder="Enter your email" className="h-10 lg:min-w-72" value={email} onChange={(e) => setEmail(e.target.value)} required />
+				<Button type="submit" className="h-10">
+					Subscribe
 				</Button>
 			</div>
 			<p className="mt-2 text-left text-xs text-muted-foreground">
