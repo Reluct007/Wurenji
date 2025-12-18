@@ -6,4 +6,4 @@ compatibility_flags = ["nodejs_compat"]
 [env.production]
 compatibility_flags = ["nodejs_compat"]
 
-# Updated to trigger redeploy with nodejs_compat flag
+# Updated to trigger redeploy with nodejs_compat flag - force sync package-lock.json
