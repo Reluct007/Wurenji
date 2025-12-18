@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og'
 
 export const runtime = 'edge'
-export const alt = 'Wurenji UAV - Professional Drone Solutions'
+export const alt = 'AERONEX - Professional Drone Solutions'
 export const size = {
   width: 1200,
   height: 630,
@@ -26,7 +26,7 @@ export default async function Image() {
       >
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <div style={{ fontSize: 64, fontWeight: 'bold', marginBottom: 20 }}>
-            Wurenji UAV
+            AERONEX
           </div>
           <div style={{ fontSize: 32, opacity: 0.9 }}>
             Professional Drone Solutions
