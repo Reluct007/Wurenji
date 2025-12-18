@@ -157,11 +157,23 @@ export default function ContactForm() {
 					<label htmlFor="files" className="block mb-2.5 text-sm font-medium">
 						File Upload
 					</label>
-					<Input id="files" name="files" type="file" multiple accept=".jpg,.jpeg,.png,.webp,.pdf,.doc,.docx,.xls,.xlsx" onChange={onFileChange} disabled={isPending} ref={fileInputRef} />
+					<div className="relative">
+						<Input 
+							id="files" 
+							name="files" 
+							type="file" 
+							multiple 
+							accept=".jpg,.jpeg,.png,.webp,.pdf,.doc,.docx,.xls,.xlsx" 
+							onChange={onFileChange} 
+							disabled={isPending} 
+							ref={fileInputRef}
+							className="cursor-pointer file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-primary file:text-primary-foreground hover:file:bg-primary/90 file:cursor-pointer"
+						/>
+					</div>
 					{data.files.length > 0 && (
-						<ul className="mt-2 text-xs">
+						<ul className="mt-2 text-xs space-y-1">
 							{data.files.map((file, index) => (
-								<li key={index}>{file.name}</li>
+								<li key={index} className="text-muted-foreground">📎 {file.name}</li>
 							))}
 						</ul>
 					)}
