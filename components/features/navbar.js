@@ -15,9 +15,8 @@ export default function Navbar({ data = navbar }) {
 			<div className="container">
 				{/* Desktop Menu */}
 				<nav className="hidden lg:flex justify-between">
-					<Link href="/" className="flex items-center gap-4">
-						<Image src={data.brand.logo} className="w-8" alt={data.brand.name} width={100} height={100} />
-						<span className="text-xl font-bold">{data.brand.name}</span>
+					<Link href="/" className="flex items-center">
+						<Image src={data.brand.logo} className="h-10 w-auto" alt={data.brand.name} width={120} height={50} priority />
 					</Link>
 
 					<div className="flex items-center gap-4">
@@ -45,9 +44,8 @@ export default function Navbar({ data = navbar }) {
 				{/* Mobile Menu */}
 				<div className="block lg:hidden">
 					<div className="flex items-center justify-between">
-						<Link href="/" className="flex items-center gap-4">
-							<Image src={data.brand.logo} className="w-8" alt={data.brand.name} width={100} height={100} />
-							<span className="text-xl font-bold">{data.brand.name}</span>
+						<Link href="/" className="flex items-center">
+							<Image src={data.brand.logo} className="h-12 w-auto" alt={data.brand.name} width={120} height={50} priority />
 						</Link>
 
 						<Sheet>
@@ -59,9 +57,8 @@ export default function Navbar({ data = navbar }) {
 							<SheetContent className="overflow-y-auto">
 								<SheetHeader>
 									<SheetTitle>
-										<Link href="/" className="flex items-center gap-2">
-											<Image src={data.brand.logo} className="w-8" alt={data.brand.name} width={100} height={100} />
-											<span className="text-xl font-bold">{data.brand.name}</span>
+										<Link href="/" className="flex items-center">
+											<Image src={data.brand.logo} className="h-10 w-auto" alt={data.brand.name} width={120} height={50} priority />
 										</Link>
 									</SheetTitle>
 								</SheetHeader>

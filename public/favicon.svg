@@ -2,31 +2,26 @@
   <!-- Background circle -->
   <circle cx="32" cy="32" r="30" fill="#FF6B35"/>
   
-  <!-- Drone Icon (centered and scaled) -->
-  <g transform="translate(17, 17)">
-    <!-- Center body -->
-    <circle cx="15" cy="15" r="5" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Hexacopter Icon (centered and scaled) -->
+  <g transform="translate(32, 32)">
+    <!-- Center hub -->
+    <circle cx="0" cy="0" r="5" fill="#ffffff"/>
+    <circle cx="0" cy="0" r="3" fill="#1a1a1a"/>
     
-    <!-- Arms -->
-    <line x1="15" y1="15" x2="3" y2="3" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
-    <line x1="15" y1="15" x2="27" y2="3" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
-    <line x1="15" y1="15" x2="3" y2="27" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
-    <line x1="15" y1="15" x2="27" y2="27" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Six arms -->
+    <line x1="0" y1="0" x2="0" y2="-15" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="13" y2="-7.5" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="13" y2="7.5" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="0" y2="15" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="-13" y2="7.5" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="-13" y2="-7.5" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
     
-    <!-- Propellers -->
-    <circle cx="3" cy="3" r="4" fill="none" stroke="#ffffff" stroke-width="2"/>
-    <circle cx="27" cy="3" r="4" fill="none" stroke="#ffffff" stroke-width="2"/>
-    <circle cx="3" cy="27" r="4" fill="none" stroke="#ffffff" stroke-width="2"/>
-    <circle cx="27" cy="27" r="4" fill="none" stroke="#ffffff" stroke-width="2"/>
-    
-    <!-- Propeller blades -->
-    <path d="M 3 0 L 3 6" stroke="#1a1a1a" stroke-width="1.5"/>
-    <path d="M 0 3 L 6 3" stroke="#1a1a1a" stroke-width="1.5"/>
-    <path d="M 27 0 L 27 6" stroke="#1a1a1a" stroke-width="1.5"/>
-    <path d="M 24 3 L 30 3" stroke="#1a1a1a" stroke-width="1.5"/>
-    <path d="M 3 24 L 3 30" stroke="#1a1a1a" stroke-width="1.5"/>
-    <path d="M 0 27 L 6 27" stroke="#1a1a1a" stroke-width="1.5"/>
-    <path d="M 27 24 L 27 30" stroke="#1a1a1a" stroke-width="1.5"/>
-    <path d="M 24 27 L 30 27" stroke="#1a1a1a" stroke-width="1.5"/>
+    <!-- Six propellers -->
+    <circle cx="0" cy="-15" r="4" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="13" cy="-7.5" r="4" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="13" cy="7.5" r="4" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="0" cy="15" r="4" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="-13" cy="7.5" r="4" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="-13" cy="-7.5" r="4" fill="none" stroke="#ffffff" stroke-width="2"/>
   </g>
 </svg>

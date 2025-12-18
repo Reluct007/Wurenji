@@ -209,34 +209,34 @@ export const productionCapacity = {
 	description: "State-of-the-art facilities dedicated to producing high-performance UAVs and precision components.",
 	items: [
 		{
-			image: "/images/motor_catalog_p12_86.png",
-			title: "Motor Winding",
-			description: "Precision automated winding for consistent motor performance"
+			image: "/images/pd1.png",
+			title: "FPV Racing Drones",
+			description: "High-speed racing drones with carbon fiber frames and advanced flight controllers"
 		},
 		{
-			image: "/images/motor_catalog_p14_98.png",
-			title: "Carbon Fiber Lab",
-			description: "Advanced layup and curing processes for lightweight airframes"
+			image: "/images/pd2.png",
+			title: "Mid-Size UAVs",
+			description: "Versatile drones for professional aerial photography and industrial applications"
 		},
 		{
-			image: "/images/motor_catalog_p16_110.png",
-			title: "Assembly Line",
-			description: "Clean-room assembly for sensitive electronics and optics"
+			image: "/images/sc2.png",
+			title: "Heavy-Lift Systems",
+			description: "Industrial-grade drones with 6-7kg payload capacity for demanding operations"
 		},
 		{
-			image: "/images/product_2025_p10_27.png",
-			title: "Testing Range",
-			description: "Indoor and outdoor flight testing facilities"
+			image: "/images/sc3.png",
+			title: "Flagship Hexacopters",
+			description: "Ultra-heavy-lift 6-motor systems with 18kg capacity and 50-minute endurance"
 		},
 		{
-			image: "/images/product_2025_p10_28.png",
-			title: "Quality Control",
-			description: "Rigorous inspection of every component before shipment"
+			image: "/images/uav_intro_p1_0.jpg",
+			title: "Flight Testing",
+			description: "Comprehensive testing facilities ensuring reliability and performance standards"
 		},
 		{
-			image: "/images/product_2025_p10_29.png",
-			title: "R&D Center",
-			description: "Continuous innovation in aerodynamics and propulsion"
+			image: "/images/uav_intro_p6_6.jpg",
+			title: "Quality Assurance",
+			description: "Rigorous inspection and certification process for every drone before delivery"
 		}
 	]
 };
@@ -279,33 +279,33 @@ export const testimonials = {
 	items: [
 		{
 			name: "David Zhang",
-			image: "https://placehold.co/100x100/png",
+			image: "https://randomuser.me/api/portraits/men/32.jpg",
 			position: "Operations Director, SecurePatrol",
-			comment: "The flight endurance of the DaQi long-range UAVs has revolutionized our border surveillance operations. Reliable and easy to maintain."
+			comment: "The flight endurance of Wurenji's FPV racing drones has revolutionized our surveillance operations. The 50-minute flight time and 15km range are game-changers."
 		},
 		{
 			name: "Sarah Miller",
-			image: "https://placehold.co/100x100/png",
+			image: "https://randomuser.me/api/portraits/women/44.jpg",
 			position: "Lead Engineer, AeroTech Solutions",
-			comment: "We source all our brushless motors from DaQi. The efficiency and build quality are consistently superior to other suppliers we've tested."
+			comment: "We've tested many heavy-lift drones, but Wurenji's 15'' hexacopter with 18kg payload capacity is unmatched. The redundancy and reliability are exceptional for our industrial applications."
 		},
 		{
 			name: "James Wilson",
-			image: "https://placehold.co/100x100/png",
+			image: "https://randomuser.me/api/portraits/men/52.jpg",
 			position: "Project Manager, GridInspect",
-			comment: "The fiber optic tether system provided by DaQi allows us to conduct unlimited-duration inspections in high-interference environments where radio links fail."
+			comment: "The Mark 10'' drone's 160km/h speed and stable video transmission make power line inspections incredibly efficient. Their OEM customization service perfectly matched our needs."
 		},
 		{
 			name: "Robert Chen",
-			image: "https://placehold.co/100x100/png",
+			image: "https://randomuser.me/api/portraits/men/67.jpg",
 			position: "CEO, AgriScan",
-			comment: "Customized multispectral payloads on their drones have improved our crop yield analysis significantly. Excellent technical support."
+			comment: "Wurenji's heavy-lift drones carry our agricultural sensors with ease. The 42-minute endurance allows us to cover large farmlands in a single flight. Excellent technical support."
 		},
 		{
 			name: "Emily Davis",
-			image: "https://placehold.co/100x100/png",
+			image: "https://randomuser.me/api/portraits/women/68.jpg",
 			position: "Logistics Manager, RapidDelivery",
-			comment: "Their heavy-lift drones are robust and dependable. We rely on them for critical medical supply deliveries in remote areas."
+			comment: "Their 13'' heavy-lift drone with 6kg payload is perfect for our medical supply deliveries. Robust, dependable, and the dual battery system provides the reliability we need."
 		}
 	]
 };
