@@ -1,0 +1,9 @@
+# Cloudflare Pages ignore file
+# Exclude Next.js cache files that are too large for deployment
+.next/cache/
+.next/cache/**
+*.pack
+node_modules/
+.git/
+.env*
+*.log
