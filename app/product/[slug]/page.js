@@ -49,12 +49,6 @@ export default function Product({ params }) {
 						</div>
 					)}
 
-					{product_data.price && (
-						<div className="mt-6">
-							<p className="text-2xl font-bold text-primary">{product_data.price}</p>
-						</div>
-					)}
-
 					{product_data.features && product_data.features.length > 0 && (
 						<div className="flex flex-col gap-6 mt-8">
 							<h2 className="text-2xl font-bold">Key Features</h2>

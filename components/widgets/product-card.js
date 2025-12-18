@@ -16,9 +16,6 @@ export default function ProductCard({ data }) {
 				<CardContent className="p-6">
 					<h3 className="text-xl font-semibold mb-2">{data.title}</h3>
 					<p className="text-muted-foreground text-sm mb-4 line-clamp-2">{data.description}</p>
-					{data.price && (
-						<p className="text-lg font-bold text-primary mb-2">{data.price}</p>
-					)}
 					<div className="flex items-center text-sm text-primary font-medium">
 						Learn More
 						<ArrowRight className="ml-1 h-4 w-4" />
